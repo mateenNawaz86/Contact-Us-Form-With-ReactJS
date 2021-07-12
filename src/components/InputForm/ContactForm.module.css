@@ -1,0 +1,79 @@
+.heading {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.heading h1 {
+  text-transform: uppercase;
+  user-select: none;
+  letter-spacing: 1px;
+  color: #4b0082;
+  font-size: 2rem;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+}
+
+.form_controls {
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_control {
+  margin: 0.5rem 0;
+}
+
+.form_control label {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+  color: #778899;
+  user-select: none;
+  text-transform: capitalize;
+}
+
+.form_control input,
+.form_control textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  line-height: 26px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: 2px solid #cccc;
+  padding: 0 0.5rem;
+  color: #808080;
+  border-radius: 4px;
+}
+
+.form_control input:focus,
+.form_control textarea {
+  outline: none;
+}
+
+.form_control input:hover,
+.form_control input:active,
+.form_control textarea:hover,
+.form_control textarea:active {
+  border-radius: 4px;
+  border-color: #7fffd4;
+}
+
+.form_control.invalid input {
+  border-color: red;
+}
+
+.actions {
+  text-align: left;
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 400px) {
+  .heading {
+    padding-top: 2rem;
+  }
+  .heading h1 {
+    font-size: 1.3rem;
+  }
+}
